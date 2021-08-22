@@ -5,7 +5,8 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
 
-var groupIsOnlyStudents; // complete this statement
+const groupIsOnlyStudents = group.every(person => students.includes(person)
+)
 
 if (groupIsOnlyStudents) {
   console.log("The group contains only students");
